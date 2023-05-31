@@ -19,4 +19,14 @@ ul {
   list-style: none;
 }
 
+.header_logo {
+  aspect-ratio: 1/1;
+  width: 5rem;
+}
+
+.section-lists-container_image {
+  aspect-ratio: 16/10;
+  width: 10rem;
+}
+
 /*# sourceMappingURL=style.css.map */
