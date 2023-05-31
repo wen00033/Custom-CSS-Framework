@@ -1,0 +1,167 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div id="overlay" class="overlay-hidden"></div>
+    <div class="wrapper">
+      <header>
+        <img class="header_logo" src="images/random Logo.png" alt="logo" />
+        <!-- list -->
+        <nav class="header-nav" data-expanded="false">
+          <ul class="header-nav__icon">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="section-title">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="section-title_content">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              powerof platforms back into the hands of the people.But is it
+              really fulfilling it's promise?
+            </p>
+            <!-- button -->
+            <button>Read more</button>
+          </div>
+        </section>
+        <section class="section-new">
+          <h2>New</h2>
+          <div>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <hr />
+          <div>
+            <h3>The Downsides of AI Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <hr />
+          <div>
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means
+            </p>
+          </div>
+        </section>
+        <section class="section-lists">
+          <div class="section-lists-container">
+            <img
+              class="section-lists-container_image"
+              src="images/image3.png"
+              alt="images"
+            />
+            <div class="section-lists-container_content">
+              <h2>01</h2>
+              <h3>Reviving Retro PCs</h3>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="section-lists-container">
+            <img
+              class="section-lists-container_image"
+              src="images/image1.png"
+              alt="images"
+            />
+            <div class="section-lists-container_content">
+              <h2>02</h2>
+              <h3>Top 10 Laptops of 2022</h3>
+              <p>Our best picks for varous needs and budgets.</p>
+            </div>
+          </div>
+          <div class="section-lists-container">
+            <img
+              class="section-lists-container_image"
+              src="images/image2.png"
+              alt="images"
+            />
+            <div class="section-lists-container_content">
+              <h2>03</h2>
+              <h3>The Growth of gaming</h3>
+              <p>How the pandemic has sparked opportunities.</p>
+            </div>
+          </div>
+        </section>
+        <!-- table -->
+        <section>
+          <table>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+          </table>
+        </section>
+        <!-- input-->
+        <section>
+          <div class="container">
+            <form action="action_page.php">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
