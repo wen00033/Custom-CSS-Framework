@@ -1,28 +1,172 @@
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+
+// Import Variables and Mixins
+@import 'variables', 'mixins';
+
+/* 
+========================
+Reset CSS
+========================
+*/
 * {
   padding: 0;
   margin: 0;
+
+  &,
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
 html {
   box-sizing: inherit;
-  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
 }
-// ------------------
+
 ol,
 ul {
   list-style: none;
 }
-.header_logo {
-  aspect-ratio: 1/1;
-  width: 5rem;
+
+/* 
+========================
+Navigation
+========================
+*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px $xlg;
+  background-color: $primary;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+
+  /* Fix the logo's height to full height */
+  &>a {
+    height: 50px;
+  }
+
+  &-logo {
+    height: 100%;
+  }
+
+  &-list {
+    display: flex;
+
+    li {
+      display: flex;
+      
+      a {
+        padding: $md;
+        text-decoration: none;
+        color: #fff;
+        font-weight: $semiBold;
+  
+        &:hover {
+          background-color: #fff;
+          color: $primary;
+          transition: $transition;
+        }
+      }
+    }
+  }
 }
 
-.section-lists-container_image {
-  aspect-ratio: 16 / 10;
-  width: 10rem;
+/* 
+========================
+Header Banner
+========================
+*/
+.header-banner {
+  width: 100%;
+  padding: calc($xlg * 4) calc(100% - 1280px);
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url('https://picsum.photos/1980/600');
+  color: #fff;
+
+  h1 {
+    font-size: $size-42;
+  }
+
+  &-content {
+    p {
+      padding-bottom: $sm;
+    }
+  }
 }
+
+/* 
+========================
+Butttons
+========================
+*/
+
+@each $color, $hue in $theme-colors {
+  .button-#{$color} {
+    background-color: $hue;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($hue, 15);
+      transition: $transition;
+    }
+  }
+}
+
+.button {
+  @include button;
+  
+  &-tertiary {
+    color: #000;
+  }
+}
+
+/* 
+========================
+Sections
+========================
+*/
+.section {
+  padding: calc($xlg * 1.5) calc(100% - 1280px);
+
+  h2 {
+    font-size: $size-35;
+    padding-bottom: $md;
+    color: $secondary;
+    text-align: center;
+  }
+}
+
+/* 
+========================
+New Features
+========================
+*/
+
+/* 
+========================
+Information Cards
+========================
+*/
+.cards {
+  &-image {
+    aspect-ratio: 16 / 10;
+    width: 10rem;
+  }
+}
+
+/* 
+========================
+Table
+========================
+*/
+
+/* 
+========================
+Forms
+========================
+*/

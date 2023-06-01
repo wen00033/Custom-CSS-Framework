@@ -1,48 +1,57 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
       rel="stylesheet"
-    />
+    >
+    <title>Custom-CSS-Framework</title>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <div id="overlay" class="overlay-hidden"></div>
+    <!-- Navigation - Satrt -->
+    <nav class="navbar" data-expanded="false">
+      <a href="#">
+        <img class="navbar-logo" src="images/random Logo.png" alt="logo">
+      </a>
+      
+      <ul class="navbar-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">New Features</a></li>
+        <li><a href="#cards">Cards</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#forms">Forms</a></li>
+      </ul>
+    </nav>
+    <!-- Navigation - End -->
+
+    <!-- Header Banner - Start-->
+    <header class="header-banner">
+      <h1>The Bright Future of Web 3.0?</h1>
+      <div class="header-banner-content">
+        <p>
+          We dive into the next evolution of the web that claims to put the
+          powerof platforms back into the hands of the people.But is it
+          really fulfilling it's promise?
+        </p>
+        <button class="button button-primary">Read more</button>
+      </div>
+    </header>
+    <!-- Header Banner - End-->
+   
     <div class="wrapper">
-      <header>
-        <img class="header_logo" src="images/random Logo.png" alt="logo" />
-        <!-- list -->
-        <nav class="header-nav" data-expanded="false">
-          <ul class="header-nav__icon">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Popular</a></li>
-            <li><a href="#">Trending</a></li>
-            <li><a href="#">Categories</a></li>
-          </ul>
-        </nav>
-      </header>
       <main>
-        <section class="section-title">
-          <h1>The Bright Future of Web 3.0?</h1>
-          <div class="section-title_content">
-            <p>
-              We dive into the next evolution of the web that claims to put the
-              powerof platforms back into the hands of the people.But is it
-              really fulfilling it's promise?
-            </p>
-            <!-- button -->
-            <button>Read more</button>
-          </div>
-        </section>
-        <section class="section-new">
-          <h2>New</h2>
+        <!-- New Features - Start -->
+        <section class="section" id="features">
+          <h2>New Features</h2>
           <div>
             <h3>Hydrogen VS Electric Cars</h3>
             <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
@@ -64,46 +73,53 @@
             </p>
           </div>
         </section>
-        <section class="section-lists">
-          <div class="section-lists-container">
+        <!-- New Features - End -->
+
+        <!-- Cards - Start -->
+        <section class="section" id="cards">
+          <h2>Cards</h2>
+          <div class="cards-container">
             <img
-              class="section-lists-container_image"
+              class="cards-image"
               src="images/image3.png"
               alt="images"
             />
-            <div class="section-lists-container_content">
-              <h2>01</h2>
-              <h3>Reviving Retro PCs</h3>
+            <div class="cards-content">
+              <h3>01</h3>
+              <h4>Reviving Retro PCs</h4>
               <p>What happens when old PCs are given modern upgrades?</p>
             </div>
           </div>
-          <div class="section-lists-container">
+          <div class="cards-container">
             <img
-              class="section-lists-container_image"
+              class="cards-image"
               src="images/image1.png"
               alt="images"
             />
-            <div class="section-lists-container_content">
-              <h2>02</h2>
-              <h3>Top 10 Laptops of 2022</h3>
+            <div class="cards-content">
+              <h3>02</h3>
+              <h4>Top 10 Laptops of 2022</h4>
               <p>Our best picks for varous needs and budgets.</p>
             </div>
           </div>
-          <div class="section-lists-container">
+          <div class="cards-container">
             <img
-              class="section-lists-container_image"
+              class="cards-image"
               src="images/image2.png"
               alt="images"
             />
-            <div class="section-lists-container_content">
-              <h2>03</h2>
-              <h3>The Growth of gaming</h3>
+            <div class="cards-content">
+              <h3>03</h3>
+              <h4>The Growth of gaming</h4>
               <p>How the pandemic has sparked opportunities.</p>
             </div>
           </div>
         </section>
-        <!-- table -->
-        <section>
+        <!-- Cards - End -->
+
+        <!-- Table - Start -->
+        <section class="section" id="table">
+          <h2>Table</h2>
           <table>
             <tr>
               <th>Company</th>
@@ -122,45 +138,47 @@
             </tr>
           </table>
         </section>
-        <!-- input-->
-        <section>
-          <div class="container">
-            <form action="action_page.php">
-              <label for="fname">First Name</label>
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Your name.."
-              />
+        <!-- Table - End -->
 
-              <label for="lname">Last Name</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name.."
-              />
+        <!-- Forms - Start -->
+        <section class="section" id="forms">
+          <h2>Forms</h2>
+          <form>
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
 
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
 
-              <label for="subject">Subject</label>
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder="Write something.."
-                style="height: 200px"
-              ></textarea>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
 
-              <input type="submit" value="Submit" />
-            </form>
-          </div>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
         </section>
+        <!-- Forms - End -->
       </main>
     </div>
   </body>
