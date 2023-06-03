@@ -1,13 +1,12 @@
-
 // Colors
 $primary: #5fb49c;
 $secondary: #414288;
 $tertiary: #f6ae2d;
 
 $theme-colors: (
-    "primary": #5fb49c,
-    "secondary": #414288,
-    "tertiary": #f6ae2d
+  "primary": #5fb49c,
+  "secondary": #414288,
+  "tertiary": #f6ae2d,
 );
 
 // Padding, Marging, Border-Radius sizes
@@ -24,15 +23,31 @@ $size-35: 35px;
 $size-42: 42px;
 
 // Box Shadow
-$box-shadow: 2px 5px 15px 3px rgba(187, 187, 187, .8);
+$box-shadow: 2px 5px 15px 3px rgba(187, 187, 187, 0.8);
 
 // Border
 $border: 1px solid $secondary;
 
 // Transition
-$transition: all .25s ease-in;
+$transition: all 0.25s ease-in;
 
 // Font Weight
 $semiBold: 600;
 $bold: 700;
 $extraBold: 800;
+
+// layout setting
+
+$bleed-area: clamp(10px, 50px, 10%);
+$individual-laout-seting: (
+  small: 10px,
+  medium: 15px,
+  big: 20px,
+  large: 25px,
+);
+
+@each $size, $margin-block in $individual-laout-seting {
+  .block-#{$size} > *:not(:last-child) {
+    margin-block: $margin-block;
+  }
+}

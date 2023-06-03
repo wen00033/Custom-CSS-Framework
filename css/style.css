@@ -1,5 +1,37 @@
 /* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
+.block-small > *:not(:last-child) {
+  margin-block: 10px;
+}
+
+.block-medium > *:not(:last-child) {
+  margin-block: 15px;
+}
+
+.block-big > *:not(:last-child) {
+  margin-block: 20px;
+}
+
+.block-large > *:not(:last-child) {
+  margin-block: 25px;
+}
+
+.block-small > *:not(:last-child) {
+  margin-block: 10px;
+}
+
+.block-medium > *:not(:last-child) {
+  margin-block: 15px;
+}
+
+.block-big > *:not(:last-child) {
+  margin-block: 20px;
+}
+
+.block-large > *:not(:last-child) {
+  margin-block: 25px;
+}
+
 /* 
 ========================
 Reset CSS
@@ -28,6 +60,11 @@ ul {
 Navigation
 ========================
 */
+.navbar-logo {
+  border-radius: 30px;
+  aspect-ratio: 5/4;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -128,6 +165,11 @@ Butttons
 
 /* 
 ========================
+
+
+
+
+
 Sections
 ========================
 */
@@ -141,8 +183,31 @@ Sections
   text-align: center;
 }
 
+.header-banner {
+  padding-inline: clamp(10px, 50px, 10%);
+}
+
+main > *:nth-child(even) {
+  background-color: #5fb49c;
+  padding-inline: clamp(10px, 50px, 10%);
+}
+
+main > *:nth-child(odd) {
+  padding-inline: clamp(10px, 50px, 10%);
+}
+
 /* 
 ========================
+.
+
+
+
+
+
+
+
+
+
 New Features
 ========================
 */
@@ -156,6 +221,25 @@ Information Cards
   width: 10rem;
 }
 
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  transition: all 0.25s ease-in;
+}
+.cards-wrapper h3 {
+  font-size: 30px;
+  color: #414288;
+}
+.cards-wrapper h3:hover {
+  color: #f6ae2d;
+}
+
+@media (width < 600px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 /* 
 ========================
 Table
@@ -166,5 +250,18 @@ Table
 Forms
 ========================
 */
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  font-size: 20px;
+}
+form input,
+form textarea,
+form select {
+  border-radius: 5px;
+  height: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */

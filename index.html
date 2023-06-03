@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
       rel="stylesheet"
-    >
+    />
     <title>Custom-CSS-Framework</title>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
@@ -20,9 +20,9 @@
     <!-- Navigation - Satrt -->
     <nav class="navbar" data-expanded="false">
       <a href="#">
-        <img class="navbar-logo" src="images/random Logo.png" alt="logo">
+        <img class="navbar-logo" src="images/random Logo.png" alt="logo" />
       </a>
-      
+
       <ul class="navbar-list">
         <li><a href="#">Home</a></li>
         <li><a href="#features">New Features</a></li>
@@ -36,21 +36,21 @@
     <!-- Header Banner - Start-->
     <header class="header-banner">
       <h1>The Bright Future of Web 3.0?</h1>
-      <div class="header-banner-content">
+      <div class="header-banner-content block-big">
         <p>
           We dive into the next evolution of the web that claims to put the
-          powerof platforms back into the hands of the people.But is it
-          really fulfilling it's promise?
+          powerof platforms back into the hands of the people.But is it really
+          fulfilling it's promise?
         </p>
         <button class="button button-primary">Read more</button>
       </div>
     </header>
     <!-- Header Banner - End-->
-   
+
     <div class="wrapper">
       <main>
         <!-- New Features - Start -->
-        <section class="section" id="features">
+        <section class="section block-small" id="features">
           <h2>New Features</h2>
           <div>
             <h3>Hydrogen VS Electric Cars</h3>
@@ -78,40 +78,30 @@
         <!-- Cards - Start -->
         <section class="section" id="cards">
           <h2>Cards</h2>
-          <div class="cards-container">
-            <img
-              class="cards-image"
-              src="images/image3.png"
-              alt="images"
-            />
-            <div class="cards-content">
-              <h3>01</h3>
-              <h4>Reviving Retro PCs</h4>
-              <p>What happens when old PCs are given modern upgrades?</p>
+          <div class="cards-wrapper">
+            <div class="cards-container block-small">
+              <img class="cards-image" src="images/image3.png" alt="images" />
+              <div class="cards-content">
+                <h3>01</h3>
+                <h4>Reviving Retro PCs</h4>
+                <p>What happens when old PCs are given modern upgrades?</p>
+              </div>
             </div>
-          </div>
-          <div class="cards-container">
-            <img
-              class="cards-image"
-              src="images/image1.png"
-              alt="images"
-            />
-            <div class="cards-content">
-              <h3>02</h3>
-              <h4>Top 10 Laptops of 2022</h4>
-              <p>Our best picks for varous needs and budgets.</p>
+            <div class="cards-container block-small">
+              <img class="cards-image" src="images/image1.png" alt="images" />
+              <div class="cards-content">
+                <h3>02</h3>
+                <h4>Top 10 Laptops of 2022</h4>
+                <p>Our best picks for varous needs and budgets.</p>
+              </div>
             </div>
-          </div>
-          <div class="cards-container">
-            <img
-              class="cards-image"
-              src="images/image2.png"
-              alt="images"
-            />
-            <div class="cards-content">
-              <h3>03</h3>
-              <h4>The Growth of gaming</h4>
-              <p>How the pandemic has sparked opportunities.</p>
+            <div class="cards-container block-small">
+              <img class="cards-image" src="images/image2.png" alt="images" />
+              <div class="cards-content">
+                <h3>03</h3>
+                <h4>The Growth of gaming</h4>
+                <p>How the pandemic has sparked opportunities.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -143,7 +133,7 @@
         <!-- Forms - Start -->
         <section class="section" id="forms">
           <h2>Forms</h2>
-          <form>
+          <form class="block-small">
             <label for="fname">First Name</label>
             <input
               type="text"
@@ -172,11 +162,9 @@
               id="subject"
               name="subject"
               placeholder="Write something.."
-              style="height: 200px"
             ></textarea>
-
-            <input type="submit" value="Submit" />
           </form>
+          <input type="submit" value="Submit" />
         </section>
         <!-- Forms - End -->
       </main>

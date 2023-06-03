@@ -1,9 +1,8 @@
-
 /* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
 
 // Import Variables and Mixins
-@import 'variables', 'mixins';
+@import "variables", "mixins";
 
 /* 
 ========================
@@ -23,7 +22,7 @@ Reset CSS
 
 html {
   box-sizing: inherit;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 ol,
@@ -36,6 +35,11 @@ ul {
 Navigation
 ========================
 */
+.navbar-logo {
+  border-radius: $xlg;
+  aspect-ratio: 5/4;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,7 +51,7 @@ Navigation
   overflow: hidden;
 
   /* Fix the logo's height to full height */
-  &>a {
+  & > a {
     height: 50px;
   }
 
@@ -60,13 +64,13 @@ Navigation
 
     li {
       display: flex;
-      
+
       a {
         padding: $md;
         text-decoration: none;
         color: #fff;
         font-weight: $semiBold;
-  
+
         &:hover {
           background-color: #fff;
           color: $primary;
@@ -85,7 +89,8 @@ Header Banner
 .header-banner {
   width: 100%;
   padding: calc($xlg * 4) calc(100% - 1280px);
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url('https://picsum.photos/1980/600');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("https://picsum.photos/1980/600");
   color: #fff;
 
   h1 {
@@ -119,7 +124,7 @@ Butttons
 
 .button {
   @include button;
-  
+
   &-tertiary {
     color: #000;
   }
@@ -127,6 +132,11 @@ Butttons
 
 /* 
 ========================
+
+
+
+
+
 Sections
 ========================
 */
@@ -141,8 +151,29 @@ Sections
   }
 }
 
+.header-banner {
+  padding-inline: $bleed-area;
+}
+main > *:nth-child(even) {
+  background-color: $primary;
+  padding-inline: $bleed-area;
+}
+main > *:nth-child(odd) {
+  padding-inline: $bleed-area;
+}
+
 /* 
 ========================
+.
+
+
+
+
+
+
+
+
+
 New Features
 ========================
 */
@@ -158,6 +189,25 @@ Information Cards
     width: 10rem;
   }
 }
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  transition: $transition;
+
+  h3 {
+    font-size: 30px;
+    color: $secondary;
+    &:hover {
+      color: $tertiary;
+    }
+  } // justify-content: space-evenly;
+}
+@media (width < 600px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* 
 ========================
@@ -170,3 +220,16 @@ Table
 Forms
 ========================
 */
+form {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: $lg;
+  }
+  input,
+  textarea,
+  select {
+    border-radius: $xs;
+    height: 30px;
+  }
+}

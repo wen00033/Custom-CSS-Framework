@@ -1,17 +1,18 @@
-
-@import 'variables';
+@import "variables";
 
 @mixin button {
-    padding: $sm $md;
-    font-size: $size-18;
-    font-weight: 600;
-    border-radius: $sm;
-    border: none;
-    box-shadow: $box-shadow;
-    cursor: pointer;
+  padding: $sm $md;
+  font-size: $size-18;
+  font-weight: 600;
+  border-radius: $sm;
+  border: none;
+  box-shadow: $box-shadow;
+  cursor: pointer;
 }
 
 @mixin buttonHover {
-    // filter: hue-rotate(30deg);
-    background-color: darken($primary, 10%);
+  // filter: hue-rotate(30deg);
+  background-color: darken($primary, 10%);
 }
+
+// @mixin section
