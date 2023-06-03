@@ -1,0 +1,38 @@
+
+// Colors
+$primary: #5fb49c;
+$secondary: #414288;
+$tertiary: #f6ae2d;
+
+$theme-colors: (
+    "primary": #5fb49c,
+    "secondary": #414288,
+    "tertiary": #f6ae2d
+);
+
+// Padding, Marging, Border-Radius sizes
+$xs: 5px;
+$sm: 10px;
+$md: 15px;
+$lg: 20px;
+$xlg: 30px;
+
+// Font Size
+$size-18: 18px;
+$size-26: 26px;
+$size-35: 35px;
+$size-42: 42px;
+
+// Box Shadow
+$box-shadow: 2px 5px 15px 3px rgba(187, 187, 187, .8);
+
+// Border
+$border: 1px solid $secondary;
+
+// Transition
+$transition: all .25s ease-in;
+
+// Font Weight
+$semiBold: 600;
+$bold: 700;
+$extraBold: 800;
