@@ -214,6 +214,24 @@ Information Cards
 Table
 ========================
 */
+table, td, th {
+  border: $border
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th {
+  background-color: $primary;
+  color: #fff;
+  padding: $sm;
+}
+
+td {
+  padding: $sm;
+}
 
 /* 
 ========================
