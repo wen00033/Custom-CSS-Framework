@@ -218,12 +218,14 @@ Table
 table {
   border: $border;
   border-collapse: collapse;
-  width: 50%;
+  width: 100%;
+  background-color:$tertiary ;
 }
 
 th {
   background-color: $primary;
-  padding: $sm;
+  padding: $md;
+  font-weight: $bold;
 }
 
 td {
