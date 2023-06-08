@@ -246,20 +246,26 @@ Table
 ========================
 */
 table {
-  border: 1px solid #414288;
   border-collapse: collapse;
   width: 100%;
   background-color: #f6ae2d;
+  
 }
 
 th {
   background-color: #5fb49c;
-  padding: 15px;
+  padding: 10px;
   font-weight: 700;
+  border: 1px solid #414288;
+  text-align: left;
 }
 
 td {
   padding: 5px;
+  background-color: #f6ae2d;
+  border: 1px solid #414288;
+  color: #fff;
+  
 }
 
 /* 

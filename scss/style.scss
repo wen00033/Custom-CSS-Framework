@@ -215,7 +215,6 @@ Table
 ========================
 */
 table {
-  border: $border;
   border-collapse: collapse;
   width: 100%;
   background-color:$tertiary ;
@@ -223,12 +222,17 @@ table {
 
 th {
   background-color: $primary;
-  padding: $md;
+  padding: $sm;
   font-weight: $bold;
+  border:$border;
+
 }
 
 td {
   padding: $xs;
+  background-color: $tertiary;
+  border: $border;
+  color: #fff;
 }
 
 
