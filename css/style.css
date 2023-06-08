@@ -245,6 +245,23 @@ Information Cards
 Table
 ========================
 */
+table {
+  border: 1px solid #414288;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #f6ae2d;
+}
+
+th {
+  background-color: #5fb49c;
+  padding: 15px;
+  font-weight: 700;
+}
+
+td {
+  padding: 5px;
+}
+
 /* 
 ========================
 Forms
