@@ -249,7 +249,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   background-color: #f6ae2d;
-  
+  margin: 15px;
 }
 
 th {
@@ -257,15 +257,21 @@ th {
   padding: 10px;
   font-weight: 700;
   border: 1px solid #414288;
-  text-align: left;
+  font-size: 18px;
+}
+th:hover {
+  color: #f6ae2d;
 }
 
 td {
-  padding: 5px;
+  padding: 15px;
   background-color: #f6ae2d;
   border: 1px solid #414288;
   color: #fff;
-  
+  font-size: 18px;
+}
+td:hover {
+  color: #414288;
 }
 
 /* 

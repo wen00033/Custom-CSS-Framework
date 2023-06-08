@@ -216,8 +216,9 @@ Table
 */
 table {
   border-collapse: collapse;
-  width: 100%;
-  background-color:$tertiary ;
+  width:100%;
+  background-color:$tertiary;
+  margin: $md;  
 }
 
 th {
@@ -225,14 +226,22 @@ th {
   padding: $sm;
   font-weight: $bold;
   border:$border;
-
+  font-size: $size-18;
+    &:hover {
+      color: $tertiary;
+    }
 }
 
 td {
-  padding: $xs;
+  padding: $md;
   background-color: $tertiary;
   border: $border;
   color: #fff;
+  font-size: $size-18;
+
+  &:hover {
+    color: $secondary;
+  }
 }
 
 
