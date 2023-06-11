@@ -23,7 +23,7 @@ $size-35: 35px;
 $size-42: 42px;
 
 // Box Shadow
-$box-shadow: 2px 5px 15px 3px rgba(187, 187, 187, 0.8);
+$box-shadow: 2px 2px 6px 3px rgba(187, 187, 187, 0.8);
 
 // Border
 $border: 1px solid $secondary;
@@ -38,7 +38,7 @@ $extraBold: 800;
 
 // layout setting
 
-$bleed-area: clamp(10px, 50px, 10%);
+$bleed-area: clamp(30px, calc(100% - 1280px), 10%);
 $individual-laout-seting: (
   small: 10px,
   medium: 15px,

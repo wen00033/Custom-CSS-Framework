@@ -12,7 +12,6 @@ Reset CSS
 * {
   padding: 0;
   margin: 0;
-  // border: 1px solid red;
 
   &,
   &::after,
@@ -89,7 +88,7 @@ Header Banner
 */
 .header-banner {
   width: 100%;
-  padding: calc($xlg * 4) calc(100% - 1280px);
+  padding: calc($xlg * 4) $bleed-area;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url("https://picsum.photos/1980/600");
   color: #fff;
@@ -133,16 +132,11 @@ Butttons
 
 /* 
 ========================
-
-
-
-
-
 Sections
 ========================
 */
 .section {
-  padding: calc($xlg * 1.5) calc(100% - 1280px);
+  padding: calc($xlg * 1.5) $bleed-area;
 
   h2 {
     font-size: $size-35;
@@ -152,32 +146,9 @@ Sections
   }
 }
 
-.header-banner {
-  padding-inline: $bleed-area;
-}
 main > *:nth-child(even) {
   background-color: $primary;
-  padding-inline: $bleed-area;
 }
-main > *:nth-child(odd) {
-  padding-inline: $bleed-area;
-}
-
-/* 
-========================
-.
-
-
-
-
-
-
-
-
-
-New Features
-========================
-*/
 
 /* 
 ========================
@@ -202,7 +173,7 @@ Information Cards
     &:hover {
       color: $tertiary;
     }
-  } // justify-content: space-evenly;
+  }
 }
 @media (width < 600px) {
   .cards-wrapper {
@@ -214,50 +185,32 @@ table {
   border-collapse: collapse;
   width: 100%;
   background-color: $tertiary;
-  // margin: $md;
-}
 
-th {
-  color: $secondary;
-  background-color: $primary;
-  padding: $sm;
-  font-weight: $bold;
-  border: $border;
-  font-size: $size-18;
-  &:hover {
-    color: $tertiary;
-  }
-}
-
-td {
-  text-align: center;
-  padding: $sm;
-  background-color: $tertiary;
-  border: $border;
-  color: #fff;
-  font-size: $size-18;
-
-  &:hover {
+  th {
     color: $secondary;
+    background-color: $primary;
+    padding: $sm;
+    font-weight: $bold;
+    border: $border;
+    font-size: $size-18;
+    &:hover {
+      color: $tertiary;
+    }
+  }
+
+  td {
+    text-align: center;
+    padding: $sm;
+    background-color: $tertiary;
+    border: $border;
+    color: #fff;
+    font-size: $size-18;
+  
+    &:hover {
+      color: $secondary;
+    }
   }
 }
-
-// table {
-//   border: $border;
-//   border-collapse: collapse;
-//   width: 100%;
-//   background-color: $tertiary;
-// }
-
-// th {
-//   background-color: $primary;
-//   padding: $md;
-//   font-weight: $bold;
-// }
-
-// td {
-//   padding: $xs;
-// }
 
 /* 
 ========================
@@ -275,5 +228,11 @@ form {
   select {
     border-radius: $xs;
     height: 30px;
+  }
+}
+
+input {
+  &[type="submit"] {
+    margin-top: $xlg;
   }
 }

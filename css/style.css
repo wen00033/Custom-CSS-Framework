@@ -107,7 +107,7 @@ Header Banner
 */
 .header-banner {
   width: 100%;
-  padding: 120px calc(100% - 1280px);
+  padding: 120px clamp(30px, 100% - 1280px, 10%);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://picsum.photos/1980/600");
   color: #fff;
 }
@@ -156,7 +156,7 @@ Butttons
   font-weight: 600;
   border-radius: 10px;
   border: none;
-  box-shadow: 2px 5px 15px 3px rgba(187, 187, 187, 0.8);
+  box-shadow: 2px 2px 6px 3px rgba(187, 187, 187, 0.8);
   cursor: pointer;
 }
 .button-tertiary {
@@ -165,16 +165,11 @@ Butttons
 
 /* 
 ========================
-
-
-
-
-
 Sections
 ========================
 */
 .section {
-  padding: 45px calc(100% - 1280px);
+  padding: 45px clamp(30px, 100% - 1280px, 10%);
 }
 .section h2 {
   font-size: 35px;
@@ -183,34 +178,10 @@ Sections
   text-align: center;
 }
 
-.header-banner {
-  padding-inline: clamp(10px, 50px, 10%);
-}
-
 main > *:nth-child(even) {
   background-color: #5fb49c;
-  padding-inline: clamp(10px, 50px, 10%);
 }
 
-main > *:nth-child(odd) {
-  padding-inline: clamp(10px, 50px, 10%);
-}
-
-/* 
-========================
-.
-
-
-
-
-
-
-
-
-
-New Features
-========================
-*/
 /* 
 ========================
 Information Cards
@@ -245,8 +216,7 @@ table {
   width: 100%;
   background-color: #f6ae2d;
 }
-
-th {
+table th {
   color: #414288;
   background-color: #5fb49c;
   padding: 10px;
@@ -254,11 +224,10 @@ th {
   border: 1px solid #414288;
   font-size: 18px;
 }
-th:hover {
+table th:hover {
   color: #f6ae2d;
 }
-
-td {
+table td {
   text-align: center;
   padding: 10px;
   background-color: #f6ae2d;
@@ -266,7 +235,7 @@ td {
   color: #fff;
   font-size: 18px;
 }
-td:hover {
+table td:hover {
   color: #414288;
 }
 
@@ -287,6 +256,10 @@ form textarea,
 form select {
   border-radius: 5px;
   height: 30px;
+}
+
+input[type=submit] {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
