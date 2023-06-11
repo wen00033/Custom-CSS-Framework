@@ -240,38 +240,35 @@ Information Cards
     grid-template-columns: 1fr;
   }
 }
-/* 
-========================
-Table
-========================
-*/
-/*table {
-  background-color: #414288;
-  justify-content: start;
-  align-items: start;
-}
-
 table {
-  border:1px solid #414288;
   border-collapse: collapse;
   width: 100%;
-  background-color:#f6ae2d ;
-  
+  background-color: #f6ae2d;
 }
 
 th {
-  border:1px solid;
-  background-color:#5fb49c;
-  padding: 4px;  
+  color: #414288;
+  background-color: #5fb49c;
+  padding: 10px;
+  font-weight: 700;
+  border: 1px solid #414288;
+  font-size: 18px;
+}
+th:hover {
+  color: #f6ae2d;
 }
 
 td {
-  border:1px solid black;
-  padding: 5px;
-
+  text-align: center;
+  padding: 10px;
+  background-color: #f6ae2d;
+  border: 1px solid #414288;
+  color: #fff;
+  font-size: 18px;
 }
-
-
+td:hover {
+  color: #414288;
+}
 
 /* 
 ========================

@@ -12,6 +12,7 @@ Reset CSS
 * {
   padding: 0;
   margin: 0;
+  // border: 1px solid red;
 
   &,
   &::after,
@@ -209,28 +210,54 @@ Information Cards
   }
 }
 
-/* 
-========================
-Table
-========================
-*/
-
 table {
-  border: $border;
   border-collapse: collapse;
   width: 100%;
-  background-color:$tertiary ;
+  background-color: $tertiary;
+  // margin: $md;
 }
 
 th {
+  color: $secondary;
   background-color: $primary;
-  padding: $md;
+  padding: $sm;
   font-weight: $bold;
+  border: $border;
+  font-size: $size-18;
+  &:hover {
+    color: $tertiary;
+  }
 }
 
 td {
-  padding: $xs;
+  text-align: center;
+  padding: $sm;
+  background-color: $tertiary;
+  border: $border;
+  color: #fff;
+  font-size: $size-18;
+
+  &:hover {
+    color: $secondary;
+  }
 }
+
+// table {
+//   border: $border;
+//   border-collapse: collapse;
+//   width: 100%;
+//   background-color: $tertiary;
+// }
+
+// th {
+//   background-color: $primary;
+//   padding: $md;
+//   font-weight: $bold;
+// }
+
+// td {
+//   padding: $xs;
+// }
 
 /* 
 ========================
